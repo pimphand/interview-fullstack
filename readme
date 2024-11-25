@@ -1,0 +1,31 @@
+# Product API
+
+This project is a simple API for managing products using Node.js, Express, and MySQL. The API allows you to create, read, update, and delete products. It also performs basic input validation using `express-validator`.
+
+## Features
+
+- Create a new product
+- Read all products
+- Update an existing product
+- Delete a product
+- Input validation for product attributes (name, price, stock, etc.)
+- CORS enabled for frontend access
+
+## Requirements
+
+Before setting up the project, make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) (version 14.x or later)
+- [MySQL](https://www.mysql.com/)
+
+## Installation
+
+Follow these steps to set up the application locally.
+
+### 1. Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://your-repository-url.git
+cd your-project-folder
