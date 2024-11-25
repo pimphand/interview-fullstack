@@ -74,6 +74,9 @@ npm run serve
 
 ```
 
+URL FRONTEND : https://interview.dmpt.my.id/
+URL BACKEND : https://backend.dmpt.my.id/api/products
+
 ### Summary of Changes:
 
 - **Frontend setup**: Added instructions for setting up and running the Vue.js frontend.
