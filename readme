@@ -22,10 +22,62 @@ Before setting up the project, make sure you have the following installed:
 
 Follow these steps to set up the application locally.
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 Clone this repository to your local machine:
 
+git clone https://github.com/pimphand/interview-fullstack.git
+cd interview-fullstack
+
+## 2. Set Up the Backend
+
 ```bash
-git clone https://your-repository-url.git
-cd your-project-folder
+cd backend
+npm install
+
+This will start the backend server on http://localhost:3000.
+
+In the backend folder, create a .env file and add the following environment variables:
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your-password
+DB_NAME=your-database-name
+FRONTEND=http://localhost:9000 # Replace with your frontend URL
+
+```
+
+## 3. Set Up MySQL Database
+
+create a new database and the required table for the products:
+
+CREATE DATABASE your-database-name;
+
+USE your-database-name;
+
+CREATE TABLE products (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+description TEXT,
+price FLOAT NOT NULL,
+stock INT NOT NULL
+);
+
+npm run start
+
+## 4. Set Up the Frontend
+
+cd frontend
+npm install
+npm run serve
+
+```
+
+```
+
+### Summary of Changes:
+
+- **Frontend setup**: Added instructions for setting up and running the Vue.js frontend.
+- **Backend setup**: Detailed the steps to set up the backend, including database configuration and running the server.
+- **Environment variables**: Instructions for creating the `.env` file for both frontend and backend configurations.
+
+Make sure to replace placeholders like `your-password` and `your-database-name` with actual values, and update URLs if necessary.
